@@ -5,7 +5,8 @@ import robot from "../Assets/robot-svgrepo-com.svg"
 export default function Chatpage() {
     const initialMessages = [
         { role: "ai", text: "Hi there, welcome to Future Fits! I am your friendly personal chatbot, here to guide you through your journey of self discovery!" },
-        { role: "ai", text: "Click on the psychometric analysis menu option to write the test." },
+        { role: "ai", text: "Click on the link below to attempt the test." },
+        { role: "ai", html: "<a href='test'>Link to test</a>" },
         { role: "ai", text: "After evaluation, you may also download a detailed analysis report in PDF format!" },
     ];
 
@@ -17,7 +18,7 @@ export default function Chatpage() {
                     style={{ width: "96vw", height: "100%", border: "none", backgroundColor: "#f0ebd8" }}
                     textInput={{ placeholder: { text: "Type here..." }, styles: { container: { padding: "8px", boxShadow: "none", backgroundColor: "transparent", borderColor: "#748cab", borderRadius: "10px", color: "#0d1321" } } }}
                     initialMessages={initialMessages}
-                    avatars={'{"ai": {"src": "' + robot + '"}, "user": {"src": "' + human + '"}}'}
+                    avatars={{ "ai": { "src": robot, "styles": { avatar: { "fontSize": "1.5rem" } } }, "user": { "src": human, "styles": { avatar: { "fontSize": "1.5rem" } } } }}
                     messageStyles={{
                         "default": {
                             "user": {
