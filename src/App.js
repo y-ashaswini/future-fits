@@ -18,7 +18,7 @@ export default function App() {
             <div className="h-full md:px-8 px-4 mt-8 py-4 bg-transparent relative text-zinc-200">
                 <Routes location={location} key={location.pathname}>
                     <Route path="/" exact element={<Chatpage />} />
-                    <Route path="/test" exact element={<Test/>} />
+                    <Route path="/test" exact element={<Test />} />
                 </Routes>
             </div>
         </div>
