@@ -5,8 +5,8 @@ import robot from "../Assets/robot-svgrepo-com.svg"
 export default function Chatpage() {
     const initialMessages = [
         { role: "ai", text: "Hi there!" },
-        { role: "ai", text: "Click on the link below to give your psychometric analysis test." },
-        { role: "ai", text: "Link to test" },
+        { role: "ai", text: "Click on the psychometric analysis menu option to write the test." },
+        { role: "ai", text: "After evaluation, you can also download the detailed analysis report in PDF format!" },
     ];
 
     return (
